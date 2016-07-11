@@ -48,4 +48,4 @@ The function "tidy.data" takes dir (dir = filepath for the folder "UCI HAR Datas
 	16) separates the data set tidy into different columns based on variable type (BodyACc, BodyGyro, gravityAcc), statistic type (mean, std) and axis (x,y,z). 
 	17) calculates average for both mean and standard deviation for each subject, for each activity, for each variable and along each axis.
 	18) finally arranges the tidy data set  in ascending order of Subject.ID,Activity,Variables,Axes respectively.
-	}
+}
