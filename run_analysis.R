@@ -1,7 +1,7 @@
-library(dplyr)
+library(dplyr) $ this stores uses packages dplyr and tidyr
 library(tidyr)
 
-multiple.grep<-function(pattern, x, ...){
+multiple.grep<-function(pattern, x, ...){ # a function is constructed to perform function grep for different elements at same operation
 	greped <- numeric()
 	for (i in 1:length(pattern)) {
 		result <- grep(pattern[i],x, ...)
@@ -10,7 +10,7 @@ multiple.grep<-function(pattern, x, ...){
 	greped
 }
 
-multiple.gsub <- function(pattern, replacement, x, ...) {
+multiple.gsub <- function(pattern, replacement, x, ...) { # a function is constructed to substitute multiple elements at same operation
 	substituted <- x
 	for (i in 1:length(pattern)) {
 	substituted <- gsub(pattern[i], replacement[i], substituted, ...)
